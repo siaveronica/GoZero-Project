@@ -5,4 +5,4 @@ GoZero was created to help reduce plastic use in Indonesia.\
 GoZero sells goods made of bamboo and aluminum that can be used continuously and can be recycled again\
 # Link Our Website
 This is link to the website
-[GoZero](https://leokritajessica.github.io/gozero/)
+[GoZero](https://gozero.netlify.app/)
