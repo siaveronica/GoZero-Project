@@ -1,0 +1,349 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cream : #FFF8CD;
+    --seaweed : #CFF6CF;
+    --grass : #609062;
+    --greener : #517452;
+    --bluelite : #DDF3F5;
+    --orange : #FFB45C;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body, html{
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto; 
+}
+
+.promote{
+    display: flex;
+    background-color: var(--cream);
+    font-size: 1rem;
+    text-align: center;
+    height: 2.5em;
+    letter-spacing: 0.2rem;
+    align-items: center;
+}
+
+header{
+    height: 65px;
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-left a,
+.header-right a{
+    font-size: 20px;
+    line-height: 65px;
+    padding: 0px 40px 0px 40px;
+    color: black;
+    display: inline-block;
+}
+
+.logo{
+    width: 124px;
+}
+
+.navbar-item:hover{
+    border-bottom: 4px solid var(--orange) ;
+    font-weight: 600;
+}
+
+.menu-icon{
+    display: none !important;
+}
+
+.top-wrapper{
+    padding: 10px 10px;
+    background-image: url('zerowaste5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: calc(100% - 43px);
+    
+}
+
+.top-wrapper h1{
+    padding-top: 30px;
+    font-size: 9vh;
+    font-weight: 700;
+    line-height: 4rem;
+    align-items: center;
+    letter-spacing: 0.15em;
+    margin-top: 10px;
+    margin-right: 700px;
+    background: white;
+    position: relative;
+    text-transform: capitalize;
+    animation: text 4s 1;
+}
+
+@keyframes text{
+    0%{
+        color: white;
+        margin-bottom: -100px;
+    }
+    40%{
+        letter-spacing: 20px;
+        margin-bottom: -100px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -100px;
+    }
+}
+
+.top-wrapper p{
+    padding-top: 30px;
+    font-weight: 500;
+    line-height: 1.8rem;
+    font-size: 2.8vh;
+    letter-spacing: 0.2em;
+    text-transform: capitalize;
+}
+
+/* Story Section */
+.story-wrapper{
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+.section{
+    font-weight: lighter;
+    padding-top: 8vh;
+    text-transform: uppercase;
+    font-size: 2.8vh;
+    letter-spacing: 0.6em;
+    align-items: flex-end;
+}
+
+.title{
+    padding-top: 2.6vh;
+    text-transform: uppercase;
+    font-size: 5.4vh;
+    line-height: 6vh;
+    letter-spacing: 0.4em;
+}
+
+.content-story{
+    padding: 5vh;
+    font-size: 3vh;
+    line-height: 7vh;
+    letter-spacing: 0.09em;
+}
+
+/* Product Section */
+.product-wrapper{
+    padding-top: 4vh;
+    text-align: center;
+    padding-bottom: 8vh;
+    background-color: var(--seaweed);
+}
+
+.products{
+    display: flex;
+    justify-items: center;
+}
+
+.product{
+    padding-top: 8vh;
+    width: 25%;
+}
+
+.list-product img{
+    width: 40vh;
+}
+
+.txt-content{
+    width: 80%;
+    display: inline-block;
+    height: 24vh;
+    margin-top: 3.5vh;
+    font-size: 2.5vh;
+}
+
+.btn{
+    padding-top: 2vh;
+    display: inline-block;
+    color: black;
+}
+
+.buy-btn{
+    background-color: white;
+    border: 1px solid black;
+    padding: 2.2vh 6vh;
+    transition: all 0.5s;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 7px grey;
+}
+
+.buy-btn:hover{
+    color: white;
+    background-color: var(--grass);
+    border: 1px solid black;
+}
+
+.buy-btn:active{
+    box-shadow: none;
+    position: relative;
+    top: 7px;
+}
+
+/* Contact Form Section */
+.contact-wrapper{
+    padding-top: 9vh;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-item{
+    flex: 50%;
+}
+
+.form{
+    padding-top: 3vh;
+    text-align: left;
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+
+.form-title{
+    padding-bottom: 1.5vh;
+}
+
+.form-input{
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.form-message{
+    width: 100%;
+    height: 25vh; 
+    padding: 12px 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.btn-send{
+    color: black;
+    text-align: left;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-top: 5px;
+}
+
+.submit{
+    background-color: white;
+    border: 1px solid black;
+    padding: 1.8vh 7vh;
+    transition: all 0.5s;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+}
+
+.submit:hover{
+    color: white;
+    background-color: var(--grass);
+    border: 1px solid black;
+}
+
+/* Gozero section */
+.gozero-wrapper{
+    padding-bottom: 5vh;
+    text-align: center;
+    letter-spacing: 0.5em;
+    background-color: var(--seaweed);
+}
+
+.heading{
+    line-height: 100px;
+}
+
+.subscribe{
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 50px;
+    transition: all 0.5s;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.subscribe:hover{
+    color: white;
+    background-color: var(--grass);
+    border: 1px solid black;
+}
+
+/* footer section */
+
+footer{
+    background-color: var(--grass);
+    padding-top:15px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left{
+    padding-bottom: 10px;
+}
+
+.footer-middle{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: column;
+}
+.footer-item{
+    color: white;
+}
+
+.copyright{
+    color: white;
+    font-size: 12px;
+    background-color: var(--greener);
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    letter-spacing: 0.2em;
+}
